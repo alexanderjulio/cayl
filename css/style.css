@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  --txt-general: #3f3c3a;
+  --msg-yellow: yellow;
+  --red: rgba(255,0,0,1);
+  --orange: #f29200;
+  --orange-second: #ff6600;
+  --white-background: rgba(255, 255, 255, 0.66);
+  --black-transp: rgba(0, 0, 0, 0.5);
+  --grey: #525c66;
+  --green-yellow: rgb(226, 226, 61);
+  --blue-button-hover: #046193;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  /* font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--txt-general); */
+}
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
+}
+main {
+  width: 100%;
+  height: auto;
+}
+ul li {
+  list-style: none;
+  padding: 0 10px 10px 10px;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--bs-body-font-family);
+}
