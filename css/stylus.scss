@@ -1,14 +1,6 @@
 * {
-  box-sizing: border-box;
-}
-body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
-}
-main {
-  display: flex;
-  width: 100%;
-  height: 100vh;
+  padding: 0;
 }
 p {
   font-family: 'Lato', sans-serif;
@@ -17,6 +9,47 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   color: #004E8C;
   font-weight: 200;
+}
+.top {
+  margin-top: 400px;
+}
+.carousel-indicatorss {
+  position: absolute;
+  right: 0;
+  bottom: -400px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+.carousel-indicators .active {
+  opacity: 1;
+}
+.carousel-indicatorss [data-bs-target] {
+  box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
 }
 .backgroundServicios {
   background-image: url('../assets/background1.jpg');
@@ -38,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   padding: 25px;
   color: white;
+  text-align: center;
 }
 .cayl {
   margin-left: 70px;

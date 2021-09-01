@@ -3,7 +3,7 @@ html
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet", href="./css/stylus.scss")
+    link(rel="stylesheet" href="./css/stylus.css")
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://gstatic.com" crossorigin)
     link( href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet")
@@ -15,76 +15,79 @@ html
 
     title CA&L
   body
-    header
-      .col-2 
-        figure 
-          img.rounded(src="./assets/logo-cayl.png", alt="Imagen logo" width="200%")
-      .col-4 
-      .col-6.align-self-end 
-        nav 
-          ul.nav.nav-tabs 
-            li.nav-item 
-              a.nav-link.active(aria-current="page" href="#") Inicio 
-            li.nav-item.dropdown
-              a.nav-link.dropdown-toggle(data-bs-toogle="dropdown" href="#" role="button" aria-expanded="false") Nosotros  
-              ul.dropdown-menu 
-                li 
-                  a.dropdown-item(href="nosotros.html") Quienes somos 
-                li 
-                  a.dropdown-item(href="pyog.html") Política y objetivos integrales 
-                li 
-                  a.dropdown-item(href="pseguridad.html") Política de seguridad 
-                li 
-                  a.dropdown-item(href="anticorrupcion.html") Política de anticorrupción 
-                li 
-                  a.dropdown-item(href="resena.html") Reseña histórica 
-            li.nav-item.dropdown 
-              a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false") Servicios Especializados 
-              ul.dropdown-menu 
-                li 
-                  a.dropdown-item(href="alminInventarios.html") Administración de inventarios
-                li 
-                  a.dropdown-item(href="almacenamiento.html") Almacenamiento y logística
-                li 
-                  a.dropdown-item(href="bodega.html") Alquiler de espacios para almacenamiento
-                li 
-                  a.dropdown-item(href="alquiler.html") Alquiler de montacargas
-                li 
-                  a.dropdown-item(href="aseo.html") Aseo industrial y empresarial
-                li 
-                  a.dropdown-item(href="consultoria.html") Consultoría y asesoría
-                li 
-                  a.dropdown-item(href="reempaque.html") Empaque y reempaque 
-                li 
-                  hr.dropdown-divider
-                li 
-                  a.dropdown-item(href="outsourcing.html") Outsourcing 
-            li.nav-item 
-              a.nav-link.disabled(href="#") Noticias 
+    header.container
+      .row
+        .col-2 
+          figure 
+            img.rounded(src="./assets/logo-cayl.png", alt="Imagen logo" width="200%")
+        .col-4 
+        .col-6.align-self-end 
+          nav 
+            ul.nav.nav-tabs 
+              li.nav-item 
+                a.nav-link.active(aria-current="page" href="#") Inicio 
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-bs-toogle="dropdown" href="#" role="button" aria-expanded="false") Nosotros  
+                ul.dropdown-menu 
+                  li 
+                    a.dropdown-item(href="nosotros.html") Quienes somos 
+                  li 
+                    a.dropdown-item(href="pyog.html") Política y objetivos integrales 
+                  li 
+                    a.dropdown-item(href="pseguridad.html") Política de seguridad 
+                  li 
+                    a.dropdown-item(href="anticorrupcion.html") Política de anticorrupción 
+                  li 
+                    a.dropdown-item(href="resena.html") Reseña histórica 
+              li.nav-item.dropdown 
+                a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false") Servicios Especializados 
+                ul.dropdown-menu 
+                  li 
+                    a.dropdown-item(href="admInventarios.html") Administración de inventarios
+                  li 
+                    a.dropdown-item(href="almacenamiento.html") Almacenamiento y logística
+                  li 
+                    a.dropdown-item(href="bodega.html") Alquiler de espacios para almacenamiento
+                  li 
+                    a.dropdown-item(href="alquiler.html") Alquiler de montacargas
+                  li 
+                    a.dropdown-item(href="aseo.html") Aseo industrial y empresarial
+                  li 
+                    a.dropdown-item(href="consultoria.html") Consultoría y asesoría
+                  li 
+                    a.dropdown-item(href="reempaque.html") Empaque y reempaque 
+                  li 
+                    hr.dropdown-divider
+                  li 
+                    a.dropdown-item(href="outsourcing.html") Outsourcing 
+              li.nav-item 
+                a.nav-link(href="#") Noticias 
+              li.nav-item 
+                a.nav-link.disabled(href="#" tabindex="-1" aria-disabled="true") Intranet
     main 
       section 
         #carouselExampleDark.carousel.carousel-dark.slide(data-bs-ride="carousel")
-          .carousel-indicators 
+          .carousel-indicatorss 
             button.active(type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
             button(type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2")
-            button(type="button" data-bs-target="carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3")
+            button(type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3")
           .caruosel-inner 
             .carousel-item.active(data-bs-interval="10000")  
-              img.d-block.w-100(src="./assets/img1.jpg" heigth="400" alt="imagen 1 carousel")
+              img.d-block.w-100(src="./assets/img1.jpg" height="400" alt="imagen 1 carousel")
               .carousel-caption.d-none.d-md-block   
                 h5 First slide label
                 p Some representative placeholder content for the first slide.
             .carousel-item(data-bs-interval="2000")  
-              img.d-block.w-100(src="./assets/img2.jpg" heigth="400" alt="imagen 1 carousel")
+              img.d-block.w-100(src="./assets/img2.jpg" height="400" alt="imagen 2 carousel")
               .carousel-caption.d-none.d-md-block
                 h5 Second slide label
                 p Some representative placeholder content for the first slide.
             .carousel-item  
-              img.d-block.w-100(src="./assets/img3.jpg" heigth="400" alt="imagen 1 carousel")
+              img.d-block.w-100(src="./assets/img3.jpg" height="400" alt="imagen 3 carousel")
               .carousel-caption.d-none.d-md-block
                 h5 Third slide label
                 p Some representative placeholder content for the first slide.
-          button.carousel-control-prev(type="button" data-bs-target="carouselExampleDark" data-bs-slide="prev")
+          button.carousel-control-prev(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev")
             span.carousel-control-prev-icon(aria-hidden="true")
             span.visually-hidden Previous 
           button.carousel-control-next(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next")
@@ -94,15 +97,17 @@ html
         .position-relative.cayl 
           .position-absolute.top-0.start-0.translate-middle 
             img.rounded(src="./assets/cayl.jpg" alt="")
-          .position-absolute.top-0.start-50.tranlate-middle 
+          .position-absolute.top-0.start-50.translate-middle 
         h1 
           br
         .clearfix 
-          img.col-md-6.float-md-end.mb-3.ms-md-3(alt="")
-          p   
+          img.col-md-6.float-md-end.mb-3.ms-md-3(src="./assets/logist.jpg" alt="")
+          .top 
             br
             br
-          h4 
+            br
+            br
+            h4 Compañia de Almacenamiento y Logistica
             p Somos una empresa que cuenta con mas de 11 de años de experiencia que se ha especializado en proveer soluciones de almacenamiento y logística, fortaleciéndonos como una alternativa de outsourcing administrativo y operativo, generando confianza y tranquilidad a través de nuestros servicios.
             p Estamos concentrados actualmente en las ciudades de Barrancabermeja, Cartagena, Cúcuta, Tibasosa y Tunja, en miras de expansión tanto a nivel local como nacional.
       section(align="center")
@@ -126,15 +131,19 @@ html
             .col 
               .img-fluid 
                 img.card-img-top.rounded(src="./assets/montacargasM.jpg" alt="")
-            .col 
+            div 
+              br
+          .row 
+            .col-5 
               .img-fluid
                 img.card-img-top.rounded(src="./assets/empaque.jpg" alt="")
-            .col 
+            .col-3 
               .img-fluid 
                 img.card-img-top.rounded(src="./assets/aseo.jpg" alt="")
-            .col 
+            .col-4 
               .img-fluid 
-                img.card-img-top.rounded(src="./assets/almacenamiento.jpg" alt="")
+                img.card-img-top.rounded(src="./assets/almacenamientoLogistica.jpg" alt="")
+        br
       section.backgroundServicios 
         .container 
           br
@@ -168,23 +177,23 @@ html
           .row 
             .col-5 
               .mb-3 
-                label.from-label(for="ExampleFormControlInput1") Nombres 
-                input.form-control(tupe="text" placeholder="" aria-label="First name")
+                label.form-label(for="ExampleFormControlInput1") Nombres 
+                input.form-control(type="text" placeholder="" aria-label="First name")
               .mb-3 
-                label.from-label(for="ExampleFormControlInput1") Apellidos 
-                input.form-control(tupe="text" placeholder="" aria-label="First name")
+                label.form-label(for="ExampleFormControlInput1") Apellidos 
+                input.form-control(type="text" placeholder="" aria-label="First name")
               .mb-3 
-                label.from-label(for="ExampleFormControlInput1") Teléfono 
-                input.form-control(tupe="text" placeholder="" aria-label="First name")
+                label.form-label(for="ExampleFormControlInput1") Teléfono 
+                input.form-control(type="text" placeholder="" aria-label="First name")
               .mb-3 
-                label.from-label(for="ExampleFormControlInput1") Ciudad 
-                input.form-control(tupe="text" placeholder="" aria-label="First name")
+                label.form-label(for="ExampleFormControlInput1") Ciudad 
+                input.form-control(type="text" placeholder="" aria-label="First name")
               .mb-3 
-                label.from-label(for="ExampleFormControlInput1") Email 
-                input.form-control(tupe="email" placeholder="name@example.com" aria-label="First name")
+                label.form-label(for="ExampleFormControlInput1") Email 
+                input.form-control(type="email" placeholder="name@example.com" aria-label="First name")
               .mb-3 
-                label.from-label(for="ExampleFormControlTextarea1") Comentarios 
-                textarea.form-control(tupe="text" placeholder="" aria-label="First name")
+                label.form-label(for="ExampleFormControlTextarea1") Comentarios 
+                textarea.form-control(type="text" placeholder="" aria-label="First name")
               button.btn-btn-secondary(type="button") Enviar 
             .col-7 
               figure 
@@ -202,15 +211,15 @@ html
               .col-md-auto 
                 .d-flex(style="height: 150px;")
                   .vr 
-                .col-md-auto 
-                  ul 
-                    li 
-                      h4 DIRECCIÓN 
-                      p Calle 88 No. 24 - 140 Diamante II Bucaramanga / Santader
-                    li 
-                      h4 TELÉFONOS 
-                      span (+57) (7) 6842951
-        .backgroundDerechos(align="center") 
+              .col-md-auto 
+                ul 
+                  li 
+                    h4 DIRECCIÓN 
+                    p Calle 88 No. 24 - 140 Diamante II Bucaramanga / Santader
+                  li 
+                    h4 TELÉFONOS 
+                    span (+57) (7) 6842951
+        .backgroundDerechos 
           span © 2021 - CA&L S.A Compañia de Almacenamiento y Logística / Todos los derechos reservados
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous")
               
