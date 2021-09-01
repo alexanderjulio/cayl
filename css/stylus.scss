@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5, h6 {
 .controls {
   bottom: -300px;
 }
+.scale:hover {
+  transform: scale(1.1);
+  transform: skew(2deg);
+  // transform: rotate(30deg);
+  transform-origin: right top;
+}
 .carousel-indicatorss {
   position: absolute;
   right: 0;

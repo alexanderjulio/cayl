@@ -22,6 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -300px;
 }
 
+.scale:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: skew(2deg);
+          transform: skew(2deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
 .carousel-indicatorss {
   position: absolute;
   right: 0;
