@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-indicatorss {
   position: absolute;
   right: 0;
-  bottom: -400px;
+  bottom: -450px;
   left: 0;
   z-index: 2;
   display: -webkit-box;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: black;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
