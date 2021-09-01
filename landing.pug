@@ -87,12 +87,13 @@ html
               .carousel-caption.d-none.d-md-block
                 h5 Third slide label
                 p Some representative placeholder content for the first slide.
-          button.carousel-control-prev(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev")
-            span.carousel-control-prev-icon(aria-hidden="true")
-            span.visually-hidden Previous 
-          button.carousel-control-next(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next")
-            span.carousel-control-next-icon(aria-hidden="true")
-            span.visually-hidden Next 
+          .controls
+            button.carousel-control-prev(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev")
+              span.carousel-control-prev-icon(aria-hidden="true")
+              span.visually-hidden Previous 
+            button.carousel-control-next(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next")
+              span.carousel-control-next-icon(aria-hidden="true")
+              span.visually-hidden Next 
       section.container 
         .position-relative.cayl 
           .position-absolute.top-0.start-0.translate-middle 
