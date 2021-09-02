@@ -17,11 +17,41 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -300px;
 }
 .scale:hover {
-  transform: scale(1.1);
-  transform: skew(2deg);
+  transition: 0.8s;
+  transform: scale(1.05);
+  // transform: skew(2deg);
   // transform: rotate(30deg);
-  transform-origin: right top;
+  // transform-origin: right top;
 }
+.scale {
+  transition: 0.5s;
+}
+
+// Estilos card rotación
+// .card2 {
+//   transition: 0.5s;
+//   // width: 40%;
+//   // height: 200px;
+//   transform-style: preserve-3d;
+//   position: relative;
+// }
+// .card2:hover {
+//   transition: 1s;
+//   transform: rotateY(180deg);
+// }
+// .face {
+//   border-radius: 20px;
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+// }
+// .face.front {
+//   background-repeat: no-repeat;
+// }
+// .face.back {
+//   transform: rotateY(180deg);
+// }
+
 .carousel-indicatorss {
   position: absolute;
   right: 0;

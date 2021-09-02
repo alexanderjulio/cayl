@@ -23,12 +23,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .scale:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transform: skew(2deg);
-          transform: skew(2deg);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.scale {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .carousel-indicatorss {
