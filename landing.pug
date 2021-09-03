@@ -16,6 +16,17 @@ html
 
     title CA&L
   body
+    //- Efecto Parallax con 3 elementos
+    //- .parallax-container 
+    //-   .image.image__background 
+    //-     img(src="./assets/experiencia.png")
+    //-   .image.image__middle 
+    //-     .card3.one 
+    //-     .card3.two 
+    //-     .card3.three
+    //-   .image.image__foreground
+    //-     img(src="./assets/logo-cayl.png")
+    //- Fin Efecto Parallax
     header.container
       .row
         .col-2 
@@ -28,7 +39,7 @@ html
               li.nav-item 
                 a.nav-link.active(aria-current="page" href="#") Inicio 
               li.nav-item.dropdown
-                a.nav-link.dropdown-toggle(data-bs-toogle="dropdown" href="#" role="button" aria-expanded="false") Nosotros  
+                a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false") Nosotros  
                 ul.dropdown-menu 
                   li 
                     a.dropdown-item(href="nosotros.html") Quienes somos 
@@ -95,22 +106,19 @@ html
           //-   button.carousel-control-next(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next")
           //-     span.carousel-control-next-icon(aria-hidden="true")
           //-     span.visually-hidden Next 
-      section.container 
-        .position-relative.cayl 
-          .position-absolute.top-0.start-0.translate-middle 
-            //- img.rounded(src="./assets/cayl.jpg" alt="")
-          .position-absolute.top-0.start-50.translate-middle 
-          br
-        .clearfix 
-          img.col-md-6.float-md-end.mb-3.ms-md-3(src="./assets/logist.jpg" alt="")
-          .top 
-            br
-            br
-            br
-            br
-            h4 Compañia de Almacenamiento y Logistica
-            p Somos una empresa que cuenta con mas de 11 de años de experiencia que se ha especializado en proveer soluciones de almacenamiento y logística, fortaleciéndonos como una alternativa de outsourcing administrativo y operativo, generando confianza y tranquilidad a través de nuestros servicios.
-            p Estamos concentrados actualmente en las ciudades de Barrancabermeja, Cartagena, Cúcuta, Tibasosa y Tunja, en miras de expansión tanto a nivel local como nacional.
+      br
+      section
+          .container 
+            .clearfix 
+              img.col-md-6.float-md-end.mb-3.ms-md-3(src="./assets/logist.jpg"  alt="")
+              .top 
+                br
+                br
+                br
+                br
+                h4 Compañia de Almacenamiento y Logistica
+                p Somos una empresa que cuenta con mas de 11 de años de experiencia   que se ha especializado en proveer soluciones de almacenamiento y   logística, fortaleciéndonos como una alternativa de outsourcing   administrativo y operativo, generando confianza y tranquilidad a  través de nuestros servicios.
+                p Estamos concentrados actualmente en las ciudades de   Barrancabermeja, Cartagena, Cúcuta, Tibasosa y Tunja, en miras de   expansión tanto a nivel local como nacional.
       section(align="center")
         img(src="./assets/Separador-texto-blog.png" alt="")
       section 
