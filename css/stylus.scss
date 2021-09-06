@@ -1,4 +1,6 @@
 @import "./componentes/globales";
+@import "./componentes/bcks";
+@import "./componentes/footers";
 .controls {
   bottom: -300px;
 }
@@ -12,7 +14,6 @@
 .scale {
   transition: 0.5s;
 }
-
 //Efecto parallax
 .parallax-container {
   width: 100%;
@@ -24,6 +25,49 @@
   overflow-y: visible;
   position: relative;
 }
+.cayl {
+  margin-left: 70px;
+}
+.separador {
+  margin: 0 auto;
+  display: flex;
+}
+.servicios {
+  margin-bottom: 25px;
+}
+.bckContact {
+  background-color: $colorContact;
+  padding-bottom: 90px;
+}
+.imaTitle {
+  width: 40%;
+}
+.imgTitle2 {
+  width: 70%;
+}
+.imgTitle3 {
+  width: 35%;
+}
+
+/* Animación */
+/* h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+/* Animación */
+
 //.image {
 //   position: absolute;
 //   left: 0;
@@ -94,72 +138,3 @@
 // .face.back {
 //   transform: rotateY(180deg);
 // }
-
-
-.backgroundServicios {
-  background-image: url('../assets/background1.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-x: center;
-  background-size: 100% 100%;
-  padding: 25px;
-}
-.backgroundFooter {
-  background-color: #323347;
-  background-repeat: no-repeat;
-  padding: 25px;
-  color: white;
-  margin-top: 0px;
-}
-.backgroundDerechos {
-  background-color:#323347;
-  background-repeat: no-repeat;
-  padding: 25px;
-  color: white;
-  text-align: center;
-}
-.cayl {
-  margin-left: 70px;
-}
-.footer {
-  background-color: white;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: -70px;
-  margin-left: -10px;
-  padding: 5px;
-  padding-bottom: 10px;
-  display: flex;
-}
-.bckContact {
-  background-color: #F5F5F5;
-  padding-bottom: 90px;
-}
-.imaTitle {
-  width: 40%;
-}
-.imgTitle2 {
-  width: 70%;
-}
-.imgTitle3 {
-  width: 35%;
-}
-
-/* Animación */
-/* h2 {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-} */
-/* Animación */

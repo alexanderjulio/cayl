@@ -5,13 +5,50 @@
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   color: #004E8C;
-  font-weight: 200;
+}
+
+.backgroundElegirnos {
+  background-image: url("../assets/background1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: center;
+  background-size: 100% 100%;
+  padding: 25px;
+}
+
+.backgroundFooter {
+  background-color: #323347;
+  background-repeat: no-repeat;
+  padding: 25px;
+  color: white;
+  margin-top: 0px;
+}
+
+.backgroundDerechos {
+  background-color: #323347;
+  background-repeat: no-repeat;
+  padding: 25px;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -70px;
+  margin-left: -10px;
+  padding: 5px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .controls {
@@ -43,46 +80,19 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.backgroundServicios {
-  background-image: url("../assets/background1.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-x: center;
-  background-size: 100% 100%;
-  padding: 25px;
-}
-
-.backgroundFooter {
-  background-color: #323347;
-  background-repeat: no-repeat;
-  padding: 25px;
-  color: white;
-  margin-top: 0px;
-}
-
-.backgroundDerechos {
-  background-color: #323347;
-  background-repeat: no-repeat;
-  padding: 25px;
-  color: white;
-  text-align: center;
-}
-
 .cayl {
   margin-left: 70px;
 }
 
-.footer {
-  background-color: white;
-  width: 80%;
+.separador {
   margin: 0 auto;
-  margin-top: -70px;
-  margin-left: -10px;
-  padding: 5px;
-  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.servicios {
+  margin-bottom: 25px;
 }
 
 .bckContact {
