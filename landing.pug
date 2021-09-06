@@ -78,47 +78,50 @@ html
                 a.nav-link.disabled(href="#" tabindex="-1" aria-disabled="true") Intranet
     main 
       section 
-        #carouselExampleDark.carousel.carousel-dark.slide(data-bs-ride="carousel")
-          .carousel-indicatorss 
-            button.active(type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
-            button(type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2")
-            button(type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3")
-          .caruosel-inner 
-            .carousel-item.active(data-bs-interval="10000")  
-              img.d-block.w-100(src="./assets/img1.jpg" height="400" alt="imagen 1 carousel")
-              .carousel-caption.d-none.d-md-block   
+        //- Inicio slide de prueba
+        #carouselExampleCaptions.carousel.slide(data-bs-ride="carousel")
+          .carousel-indicators
+            button.active(type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
+            button(type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2")
+            button(type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3")
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src="./assets/img1.jpg" alt="..." height="400")
+              .carousel-caption.d-none.d-md-block
                 h5 First slide label
                 p Some representative placeholder content for the first slide.
-            .carousel-item(data-bs-interval="2000")  
-              img.d-block.w-100(src="./assets/img2.jpg" height="400" alt="imagen 2 carousel")
+            .carousel-item
+              img.d-block.w-100(src="./assets/img2.jpg" alt="..." height="400")
               .carousel-caption.d-none.d-md-block
                 h5 Second slide label
-                p Some representative placeholder content for the first slide.
-            .carousel-item  
-              img.d-block.w-100(src="./assets/img3.jpg" height="400" alt="imagen 3 carousel")
+                p Some representative placeholder content for the second slide.
+            .carousel-item
+              img.d-block.w-100(src="./assets/img3.jpg" alt="..." height="400")
               .carousel-caption.d-none.d-md-block
                 h5 Third slide label
-                p Some representative placeholder content for the first slide.
-          //- .controls
-          //-   button.carousel-control-prev(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev")
-          //-     span.carousel-control-prev-icon(aria-hidden="true")
-          //-     span.visually-hidden Previous 
-          //-   button.carousel-control-next(type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next")
-          //-     span.carousel-control-next-icon(aria-hidden="true")
-          //-     span.visually-hidden Next 
+                p Some representative placeholder content for the third slide.
+          button.carousel-control-prev(type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.visually-hidden Previous
+          button.carousel-control-next(type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.visually-hidden Next
+          </button>
+        </div>
+        //- Fin slide de prueba
       br
       section
-          .container 
-            .clearfix 
-              img.col-md-6.float-md-end.mb-3.ms-md-3(src="./assets/logist.jpg"  alt="")
-              .top 
-                br
-                br
-                br
-                br
-                h4 Compañia de Almacenamiento y Logistica
-                p Somos una empresa que cuenta con mas de 11 de años de experiencia   que se ha especializado en proveer soluciones de almacenamiento y   logística, fortaleciéndonos como una alternativa de outsourcing   administrativo y operativo, generando confianza y tranquilidad a  través de nuestros servicios.
-                p Estamos concentrados actualmente en las ciudades de   Barrancabermeja, Cartagena, Cúcuta, Tibasosa y Tunja, en miras de   expansión tanto a nivel local como nacional.
+        .container 
+          .clearfix 
+            img.col-md-6.float-md-end.mb-3.ms-md-3(src="./assets/logist.jpg"  alt="")
+            br
+            br
+            br
+            br
+            br
+            h4 Compañia de Almacenamiento y Logistica
+            p Somos una empresa que cuenta con mas de 11 de años de experiencia   que se ha especializado en proveer soluciones de almacenamiento y   logística, fortaleciéndonos como una alternativa de outsourcing   administrativo y operativo, generando confianza y tranquilidad a  través de nuestros servicios.
+            p Estamos concentrados actualmente en las ciudades de   Barrancabermeja, Cartagena, Cúcuta, Tibasosa y Tunja, en miras de   expansión tanto a nivel local como nacional.
       section(align="center")
         img(src="./assets/Separador-texto-blog.png" alt="")
       section 
