@@ -1,4 +1,5 @@
 {
   "git.ignoreLimitWarning": true,
-  "php.validate.executablePath": "c:/php/php.exe"
+  "php.validate.executablePath": "c:/php/php.exe",
+  "livePugCompiler.savePath":"localhost"
 }

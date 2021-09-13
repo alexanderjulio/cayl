@@ -1,0 +1,22 @@
+.backgroundElegirnos {
+  background-image: url('/assets/background1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: center;
+  background-size: 100% 100%;
+  padding: 25px;
+}
+.backgroundFooter {
+  background-color: $backgroundFooter;
+  background-repeat: no-repeat;
+  padding: 25px;
+  color: white;
+  margin-top: 0px;
+}
+.backgroundDerechos {
+  background-color:$backgroundFooter;
+  background-repeat: no-repeat;
+  padding: 25px;
+  color: white;
+  text-align: center;
+}

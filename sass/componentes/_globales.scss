@@ -1,0 +1,19 @@
+$amarillo: #FBBD14;
+$azul: #004E8C;
+$gris: #606062;
+$backgroundFooter: #323347;
+$colorContact: #F5F5F5; 
+$font-p: Lato;
+$font-h: Oswald;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  font-family: $font-p, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-h, sans-serif;
+  color: $azul;
+}
