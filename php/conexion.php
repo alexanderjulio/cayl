@@ -15,22 +15,22 @@ echo"Error en la conexion con el servidor";
 
 	//ingresamos la informacion a la base de datos
 	if (isset($_POST['enviar'])) {
-    $id = $_POST["id"];
-	  $nombre = $_POST["name"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $direction = $_POST["direction"];
-    $country = $_POST["country"];
-	  $order = $_POST["order"];
+        $id = $_POST["id"];
+	    $nombres = $_POST["nombres"];
+        $apellidos = $_POST["apellidos"];
+        $phone = $_POST["phone"];
+        $city = $_POST["city"];
+        $email = $_POST["email"];
+	    $comments = $_POST["comments"];
     
-    $insertarDatos = "INSERT INTO regpedido VALUES(
-												                        '$id',
-                                                '$nombre', 
-                                                '$email',
+    $insertarDatos = "INSERT INTO `form` VALUES(
+												'$id',
+                                                '$nombres', 
+                                                '$apellidos',
                                                 '$phone',
-                                                '$direction',
-                                                '$country',
-												                        '$order',
+                                                '$city',
+                                                '$email',
+												'$comments',
                                                 CURRENT_TIMESTAMP)";
 												
     $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);
@@ -42,7 +42,7 @@ echo"Error en la conexion con el servidor";
 echo'
 		<script>
 			//alert("Registro Exitoso");
-			location.href="https://";
+			location.href="http://127.0.0.1:5500/html/nosotros.html";
 		</script>
 	'
 ?>

@@ -4,48 +4,52 @@ header
       .col-2 
         figure 
           br
-          img.rounded.img-fluid(src="/assets/logo-cayl.png", alt="Imagen logo" width="150%")
+          img.rounded.img-fluid(src="/assets/logo-cayl.png", alt="Imagen logo" width="250%")
       .col-4 
-      .col-6.align-self-end 
-        nav 
-          ul.nav.nav-tabs 
-            li.nav-item 
-              a.nav-link.active(aria-current="page" href="/html/index.html") Inicio 
-            li.nav-item.dropdown
-              a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false") Nosotros  
-              ul.dropdown-menu 
-                li 
-                  a.dropdown-item(href="/html/nosotros.html") Quienes somos 
-                li 
-                  a.dropdown-item(href="/html/pyoi.html") Política y objetivos integrales 
-                li 
-                  a.dropdown-item(href="/html/pseguridad.html") Política de seguridad 
-                li 
-                  a.dropdown-item(href="/html/anticorrupcion.html") Política de anticorrupción 
-                li 
-                  a.dropdown-item(href="/html/resena.html") Reseña histórica 
-            li.nav-item.dropdown 
-              a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false") Servicios Especializados 
-              ul.dropdown-menu 
-                li 
-                  a.dropdown-item(href="/html/admInventarios.html") Administración de inventarios
-                li 
-                  a.dropdown-item(href="/html/almacenamiento.html") Almacenamiento y logística
-                li 
-                  a.dropdown-item(href="/html/bodega.html") Alquiler de espacios para almacenamiento
-                li 
-                  a.dropdown-item(href="/html/alquiler.html") Alquiler de montacargas
-                li 
-                  a.dropdown-item(href="/html/aseo.html") Aseo industrial y empresarial
-                li 
-                  a.dropdown-item(href="/html/consultoria.html") Consultoría y asesoría
-                li 
-                  a.dropdown-item(href="/html/reempaque.html") Empaque y reempaque 
-                li 
-                  hr.dropdown-divider
-                li 
-                  a.dropdown-item(href="/html/outsourcing.html") Outsourcing 
-            li.nav-item 
-              a.nav-link(href="#") Noticias 
-            li.nav-item 
-              a.nav-link.disabled(href="#" tabindex="-1" aria-disabled="true") Intranet
+      .col-12.align-self-end 
+        nav.navbar.navbar-expand-lg
+          .container-fluid
+            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+              span.navbar-toggler-icon
+            .collapse.navbar-collapse(id="navbarSupportedContent")
+              ul.navbar-nav.me-auto.mb-2.mb-lg-0 
+                li.nav-item 
+                  a.nav-link.active(aria-current="page" href="/index.html") Inicio 
+                li.nav-item.dropdown
+                  a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false") Nosotros  
+                  ul.dropdown-menu 
+                    li 
+                      a.dropdown-item(href="/html/nosotros.html") Quienes somos 
+                    li 
+                      a.dropdown-item(href="/html/pyoi.html") Política y objetivos integrales 
+                    li 
+                      a.dropdown-item(href="/html/pseguridad.html") Política de seguridad 
+                    li 
+                      a.dropdown-item(href="/html/anticorrupcion.html") Política de anticorrupción 
+                    li 
+                      a.dropdown-item(href="/html/resena.html") Reseña histórica 
+                li.nav-item.dropdown 
+                  a.nav-link.dropdown-toggle(data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false") Servicios Especializados 
+                  ul.dropdown-menu 
+                    li 
+                      a.dropdown-item(href="/html/admInventarios.html") Administración de inventarios
+                    li 
+                      a.dropdown-item(href="/html/almacenamiento.html") Almacenamiento y logística
+                    li 
+                      a.dropdown-item(href="/html/bodega.html") Alquiler de espacios para almacenamiento
+                    li 
+                      a.dropdown-item(href="/html/alquiler.html") Alquiler de montacargas
+                    li 
+                      a.dropdown-item(href="/html/aseo.html") Aseo industrial y empresarial
+                    li 
+                      a.dropdown-item(href="/html/consultoria.html") Consultoría y asesoría
+                    li 
+                      a.dropdown-item(href="/html/reempaque.html") Empaque y reempaque 
+                    li 
+                      hr.dropdown-divider
+                    li 
+                      a.dropdown-item(href="/html/outsourcing.html") Outsourcing 
+                li.nav-item 
+                  a.nav-link(href="#") Noticias
+            //- li.nav-item 
+            //-   a.nav-link.disabled(href="#" tabindex="-1" aria-disabled="true") Intranet

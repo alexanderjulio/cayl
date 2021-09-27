@@ -1,1 +1,8 @@
-extend pug/index.pug
+extend pug/componentes/plantilla.pug
+block contenidos
+  main 
+    include pug/componentes/slide.pug
+    include pug/componentes/compania.pug
+    include pug/componentes/servicio.pug
+    include pug/componentes/porque_elegirnos.pug
+    include pug/componentes/contact.pug

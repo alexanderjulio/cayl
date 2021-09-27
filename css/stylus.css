@@ -131,3 +131,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 } */
 /* Animación */
+
+.img-update {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  border-radius: 5px;
+}
+.txt-update {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: -80px;
+}
+a {
+  text-decoration: none !important;
+}
+.txt-premios {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}

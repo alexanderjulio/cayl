@@ -7,25 +7,26 @@ section.bckContact
         img.imaTitle.img-fluid.imgbck(src="/assets/contactenos.png" alt="")
     .row 
       .col-5 
-        .mb-3 
-          label.form-label(for="ExampleFormControlInput1") Nombres 
-          input.form-control(type="text" placeholder="" aria-label="First name")
-        .mb-3 
-          label.form-label(for="ExampleFormControlInput1") Apellidos 
-          input.form-control(type="text" placeholder="" aria-label="First name")
-        .mb-3 
-          label.form-label(for="ExampleFormControlInput1") Teléfono 
-          input.form-control(type="text" placeholder="" aria-label="First name")
-        .mb-3 
-          label.form-label(for="ExampleFormControlInput1") Ciudad 
-          input.form-control(type="text" placeholder="" aria-label="First name")
-        .mb-3 
-          label.form-label(for="ExampleFormControlInput1") Email 
-          input.form-control(type="email" placeholder="name@example.com" aria-label="First name")
-        .mb-3 
-          label.form-label(for="ExampleFormControlTextarea1") Comentarios 
-          textarea.form-control(type="text" placeholder="" aria-label="First name")
-        button.btn-btn-secondary(type="button") Enviar 
+        form(action="/php/conexion.php" method="POST") 
+          .mb-3 
+            label.form-label(for="nombres") Nombres 
+            input#apellidos.form-control(name="nombres" type="text" placeholder="Nombre completo" aria-label="nombres" required)
+          .mb-3 
+            label.form-label(for="apellidos") Apellidos 
+            input#apellidos.form-control(name="apellidos" type="text" placeholder="" aria-label="apellidos" required)
+          .mb-3 
+            label.form-label(for="phone") Teléfono 
+            input#phone.form-control(name="phone" type="tel" placeholder="" aria-label="Phone" pattern="[0-9]{10}" required)
+          .mb-3 
+            label.form-label(for="city") Ciudad 
+            input#city.form-control(name="city" type="text" placeholder="" aria-label="City" required)
+          .mb-3 
+            label.form-label(for="email" required) Email 
+            input#email.form-control(name="email" type="email" placeholder="name@example.com" aria-label="E-mail")
+          .mb-3 
+            label.form-label(for="comments" required) Comentarios 
+            textarea#comments.form-control(cols="30" rows="10" name="comments" type="text" placeholder="" aria-label="Comments")
+          button.btn-btn-secondary(type="submit" name="enviar" value="Enviar") Guardar Formulario
       .col-7 
         figure 
           img.img-fluid.imgbck(src="/assets//img-contactanos.png" alt="" width="100%")
